@@ -92,9 +92,6 @@ let initialState = {
   errorCovidPositif:false ,
   errorCovidSembuh:false ,
 
-  isSignedIn: null,
-  userId: null
-
 }
  
 const covids = (state = initialState, action) => {
@@ -127,11 +124,6 @@ const covids = (state = initialState, action) => {
         errorCovidSembuh: action.payload.errorMessage
       }
 
-    case SIGN_IN:
-      return { ...state, isSignedIn: true, userId: action.payload };
-
-      case SIGN_OUT:
-        return { ...state, isSignedIn: false, userId: null };
 
     default:
       return state

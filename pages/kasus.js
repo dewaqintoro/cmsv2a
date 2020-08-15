@@ -8,11 +8,11 @@ import SideCompDew from './components/SideCompDew';
 
  
 import { connect } from 'react-redux'
-import { getCovidsList, getCovidIndo, getCovidPositif, getCovidSembuh } from './actions/userActions'
+import getCovidsList,{ getCovidIndo, getCovidPositif, getCovidSembuh } from './actions/userActions'
 import TableCompDew from './components/TableCompDew';
 import CardContDew from './containers/CardContDew';
 
- 
+  
 // const mapStateToProps = (state) => {
 //   return {
 //     covids: state.covids.covids

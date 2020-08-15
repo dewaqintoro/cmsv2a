@@ -36,7 +36,7 @@ const getCovidsList = () => {
   }
 } 
 
-const getCovidIndo = () => {
+export const getCovidIndo = () => {
   return (dispatch) => {
     axios.get('https://api.kawalcorona.com/indonesia/') 
 
@@ -63,7 +63,7 @@ const getCovidIndo = () => {
   }
 }
 
-const getCovidPositif = () => {
+export const getCovidPositif = () => {
   return (dispatch) => {
     axios.get('https://api.kawalcorona.com/positif') 
 
@@ -91,7 +91,7 @@ const getCovidPositif = () => {
 }
 
 
-const getCovidSembuh = () => {
+export const getCovidSembuh = () => {
   return (dispatch) => {
     axios.get('https://api.kawalcorona.com/sembuh') 
 
@@ -119,8 +119,8 @@ const getCovidSembuh = () => {
 }
 
 export default {
-  getCovidsList,
-  getCovidIndo,
-  getCovidPositif,
-  getCovidSembuh
+  getCovidsList
+  // getCovidIndo
+  // getCovidPositif
+  // getCovidSembuh
 }
