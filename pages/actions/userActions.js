@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
  
 export const GET_COVIDS_LIST = "GET_COVIDS_LIST"
@@ -7,7 +7,7 @@ export const GET_COVID_POSITIF = "GET_COVID_POSITIF"
 export const GET_COVID_SEMBUH = "GET_COVID_SEMBUH"
 
 
-const getCovidsList = () => {
+export const getCovidsList = () => {
   return (dispatch) => {
     // axios.get('http://localhost:3004/covids') 
     axios.get(`https://api.kawalcorona.com/indonesia/provinsi/`) 
@@ -118,9 +118,17 @@ export const getCovidSembuh = () => {
   }
 }
 
-export default {
-  getCovidsList
-  // getCovidIndo
-  // getCovidPositif
-  // getCovidSembuh
+
+
+
+class userActionsyy extends Component {
+  render() {
+    return (
+      <div>
+        <h1>dew</h1>
+      </div>
+    )
+  }
 }
+
+export default userActionsyy
