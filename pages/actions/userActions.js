@@ -121,14 +121,14 @@ export const getCovidSembuh = () => {
 
 
 
-class userActionsyy extends Component {
-  render() {
-    return (
-      <div>
-        <h1>dew</h1>
-      </div>
-    )
-  }
-}
+// class userActionsyy extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>dew</h1>
+//       </div>
+//     )
+//   }
+// }
 
-export default userActionsyy
+// export default userActionsyy

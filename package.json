@@ -1,4 +1,5 @@
 {
+  "cacheDirectories": [".next/cache"],
   "name": "with-ant-design",
   "version": "1.0.0",
   "scripts": {
